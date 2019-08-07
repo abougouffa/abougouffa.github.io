@@ -20,7 +20,7 @@ var config = {
   },
 
   // The name of the layouts directory.
-  layoutDirectory: 'layouts/bulma-blog',
+  layoutDirectory: 'layouts',
 
   // The error layout template name.
   errorLayout: 'error',

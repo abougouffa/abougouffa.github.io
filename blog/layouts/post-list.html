@@ -1,18 +1,33 @@
-<!-- Post List Template -->
-<div class="posts-list fade-in">
-  <% data.posts.forEach(function(post) { %>
-    <% if(!post.draft) { %>
-      <article class="post">
-        <h1 class="post-title">
-          <a href="<%= post.permalink %>"><%= post.title %></a>
-        </h1>
-        <time class="post-date">5/28/2015</time>
-        <div class="post-content">
+<% data.posts.forEach(function(post) { %>
+  <% if(!post.draft) { %>
+    <div class="card article fade-in">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-center">
+            <img src="http://i.pravatar.cc/300" class="author-image" alt="Placeholder image">
+          </div>
+          <div class="media-content has-text-centered">
+            <a href="<%= post.permalink %>">
+              <p class="title article-title">
+                <%= post.title %>
+              </p>
+            </a>
+            <div class="tags has-addons level-item">
+              <% if(post.author) { %>
+                <span class="tag is-rounded is-info"><%= post.author %></span>
+              <% } %>
+              <% if(post.date) { %>
+                <span class="tag is-rounded"><%= post.date %> </span>
+              <% } %>
+            </div> 
+          </div>
+        </div>
+        <div class="content article-body">
           <% if(post.excerpt) { %>
             <p><%= post.excerpt %></p>
           <% } %>
         </div>
-      </article>
-    <% } %>
-  <% }) %>
-</div>
+      </div>
+    </div>
+  <% } %>
+<% }) %>
