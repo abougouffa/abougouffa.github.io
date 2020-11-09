@@ -2,23 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | H4CK0</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://abdelhakbougouffa.pro/post/</link>
+      <atom:link href="https://abdelhakbougouffa.pro/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Abdelhak Bougouffa © 2020</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Abdelhak Bougouffa © 2020</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu348984d414e85d40118eb2141888b9fd_4485_512x512_fill_lanczos_center_2.png</url>
+      <url>https://abdelhakbougouffa.pro/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://abdelhakbougouffa.pro/post/</link>
     </image>
     
     <item>
       <title>Restore a partimage to a smaller disk</title>
-      <link>/post/restore-partimage-small-disk/</link>
+      <link>https://abdelhakbougouffa.pro/post/restore-partimage-small-disk/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/restore-partimage-small-disk/</guid>
-      <description>&lt;p&gt;Sometimes; when working with 
-&lt;a href=&#34;http://www.partimage.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;partimage&lt;/code&gt;&lt;/a&gt;, someone can create a backup of a &lt;strong&gt;1TB&lt;/strong&gt; partition which contains -&lt;em&gt;for example&lt;/em&gt;- only &lt;strong&gt;10GB&lt;/strong&gt; of data; in this case, when we want to restore it, &lt;code&gt;partimage&lt;/code&gt; will fail if the restore disk does not have enough space (1TB in this case).&lt;/p&gt;
+      <guid>https://abdelhakbougouffa.pro/post/restore-partimage-small-disk/</guid>
+      <description>&lt;p&gt;Sometimes; when working with &lt;a href=&#34;http://www.partimage.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;partimage&lt;/code&gt;&lt;/a&gt;, someone can create a backup of a &lt;strong&gt;1TB&lt;/strong&gt; partition which contains -&lt;em&gt;for example&lt;/em&gt;- only &lt;strong&gt;10GB&lt;/strong&gt; of data; in this case, when we want to restore it, &lt;code&gt;partimage&lt;/code&gt; will fail if the restore disk does not have enough space (1TB in this case).&lt;/p&gt;
 &lt;p&gt;I faced this problem and here the trick I used to restore the backup image to a smaller disk image.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Create an image file with the right size (with &lt;code&gt;seek&lt;/code&gt;, we don&amp;rsquo;t need to actually have the whole space):&lt;/li&gt;

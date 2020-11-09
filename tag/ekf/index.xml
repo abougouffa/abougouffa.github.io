@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EKF | H4CK0</title>
+    <link>https://abdelhakbougouffa.pro/tag/ekf/</link>
+      <atom:link href="https://abdelhakbougouffa.pro/tag/ekf/index.xml" rel="self" type="application/rss+xml" />
+    <description>EKF</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Abdelhak Bougouffa © 2020</copyright><lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://abdelhakbougouffa.pro/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>EKF</title>
+      <link>https://abdelhakbougouffa.pro/tag/ekf/</link>
+    </image>
+    
+    <item>
+      <title>SmartTrolley: An Experimental Mobile Platform for Indoor Localization in Warehouses</title>
+      <link>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</guid>
+      <description>&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+&lt;p&gt;This work is part of an industrial project, the source code is not shared. For any details about implementation or results please contact me.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
