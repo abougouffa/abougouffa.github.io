@@ -3,77 +3,87 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://abdelhakbougouffa.pro/publication-type/2/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/author/abdelhak-bougouffa/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/authors/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/tag/lidar/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/tag/mobile-robot/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/tag/ndt/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/author/ouahiba-azouaoui/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/tag/pso/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/publication_types/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/publication/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/author/sara-bouraine/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/tag/slam/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abdelhakbougouffa.pro/tags/</loc>
+    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://abdelhakbougouffa.pro/publication-type/1/</loc>
     <lastmod>2020-12-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://abdelhakbougouffa.pro/author/abdelhak-bougouffa/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/authors/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/tag/lidar/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/tag/mobile-robot/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/tag/ndt/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://abdelhakbougouffa.pro/publication/ndtpso-icarcv2020/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/author/ouahiba-azouaoui/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/tag/pso/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/publication_types/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/publication/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/author/sara-bouraine/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/tag/slam/</loc>
-    <lastmod>2020-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abdelhakbougouffa.pro/tags/</loc>
     <lastmod>2020-12-10T00:00:00+00:00</lastmod>
   </url>
   

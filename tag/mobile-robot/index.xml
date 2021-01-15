@@ -5,12 +5,20 @@
     <link>https://abdelhakbougouffa.pro/tag/mobile-robot/</link>
       <atom:link href="https://abdelhakbougouffa.pro/tag/mobile-robot/index.xml" rel="self" type="application/rss+xml" />
     <description>Mobile robot</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Abdelhak Bougouffa © 2021</copyright><lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Abdelhak Bougouffa © 2021</copyright><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://abdelhakbougouffa.pro/images/icon_hu7c842f6b35a8d0374567474454be744c_4177_512x512_fill_lanczos_center_2.png</url>
       <title>Mobile robot</title>
       <link>https://abdelhakbougouffa.pro/tag/mobile-robot/</link>
     </image>
+    
+    <item>
+      <title>Particle swarm optimization for solving a scan-matching problem based on the normal distributions transform</title>
+      <link>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>NDT-PSO, a New NDT based SLAM Approach using Particle Swarm Optimization</title>
