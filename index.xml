@@ -6,7 +6,16 @@
     <description>Recent content on Abdelhak&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Jan 2022 04:12:44 +0200</lastBuildDate><atom:link href="https://abdelhakbougouffa.pro/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://abdelhakbougouffa.pro/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Doom Emacs Configuration</title>
+      <link>https://abdelhakbougouffa.pro/posts/config/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://abdelhakbougouffa.pro/posts/config/</guid>
+      <description>Intro I&amp;rsquo;ve been using Linux exclusively since 2010, GNU Emacs was always installed on my machine, but I didn&amp;rsquo;t discover the real Emacs until 2020, in the beginning, I started my Vanilla Emacs configuration from scratch, but after a while, it becomes a mess. As a new Emacs user, I didn&amp;rsquo;t understand the in the beginning how to optimize my configuration and how to do things correctly. I discovered then Spacemacs, which made things much easier, but it was a little slow, and just after, I found the awesome Doom Emacs, and since, I didn&amp;rsquo;t quit my Emacs screen!</description>
+    </item>
+    
+    <item>
       <title>Push partition image to an Android phone</title>
       <link>https://abdelhakbougouffa.pro/posts/push-partition-android/</link>
       <pubDate>Sun, 23 Jan 2022 04:12:44 +0200</pubDate>
