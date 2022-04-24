@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>H4CK0</title>
+    <title>Abdelhak&#39;s Blog</title>
     <link>https://abdelhakbougouffa.pro/</link>
-      <atom:link href="https://abdelhakbougouffa.pro/index.xml" rel="self" type="application/rss+xml" />
-    <description>H4CK0</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Abdelhak Bougouffa © 2021</copyright><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://abdelhakbougouffa.pro/images/icon_hu7c842f6b35a8d0374567474454be744c_4177_512x512_fill_lanczos_center_2.png</url>
-      <title>H4CK0</title>
-      <link>https://abdelhakbougouffa.pro/</link>
-    </image>
+    <description>Recent content on Abdelhak&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Jan 2022 04:12:44 +0200</lastBuildDate><atom:link href="https://abdelhakbougouffa.pro/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Push partition image to an Android phone</title>
+      <link>https://abdelhakbougouffa.pro/posts/push-partition-android/</link>
+      <pubDate>Sun, 23 Jan 2022 04:12:44 +0200</pubDate>
+      
+      <guid>https://abdelhakbougouffa.pro/posts/push-partition-android/</guid>
+      <description>Prepare your device   In your Android phone, enter recovery mode and enable ADB (usually, you need a custom recovery like TWRP, OrangeFox or LineageOS&amp;#39; recovery… etc). On a Linux machine, forward a local TCP port to a remote port on the Android device (let say local 6789, remote 9876).  adb forward tcp:6789 tcp:9876 adb shell    Netcat your file  Once connected to the device&amp;#39;s shell, start netcat in listen mode on port 9876, and redirect stdout to the partition block device:</description>
+    </item>
     
     <item>
       <title>Particle swarm optimization for solving a scan-matching problem based on the normal distributions transform</title>
       <link>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</link>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</guid>
       <description></description>
     </item>
@@ -24,6 +28,7 @@
       <title>NDT-PSO, a New NDT based SLAM Approach using Particle Swarm Optimization</title>
       <link>https://abdelhakbougouffa.pro/publication/ndtpso-icarcv2020/</link>
       <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://abdelhakbougouffa.pro/publication/ndtpso-icarcv2020/</guid>
       <description></description>
     </item>
@@ -32,53 +37,56 @@
       <title>SmartTrolley: An Experimental Mobile Platform for Indoor Localization in Warehouses</title>
       <link>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</link>
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</guid>
-      <description>&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
-&lt;p&gt;This work is part of an industrial project, the source code is not shared. For any details about implementation or results please contact me.&lt;/p&gt;
-</description>
+      <description>Note This work is part of an industrial project, the source code is not shared. For any details about implementation or results please contact me.</description>
     </item>
     
     <item>
       <title>Restore a partimage to a smaller disk</title>
-      <link>https://abdelhakbougouffa.pro/post/restore-partimage-small-disk/</link>
+      <link>https://abdelhakbougouffa.pro/posts/restore-partimage-small-disk/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://abdelhakbougouffa.pro/post/restore-partimage-small-disk/</guid>
-      <description>&lt;p&gt;Sometimes; when working with &lt;a href=&#34;http://www.partimage.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;partimage&lt;/code&gt;&lt;/a&gt;, someone can create a backup of a &lt;strong&gt;1TB&lt;/strong&gt; partition which contains -&lt;em&gt;for example&lt;/em&gt;- only &lt;strong&gt;10GB&lt;/strong&gt; of data; in this case, when we want to restore it, &lt;code&gt;partimage&lt;/code&gt; will fail if the restore disk does not have enough space (1TB in this case).&lt;/p&gt;
-&lt;p&gt;I faced this problem and here the trick I used to restore the backup image to a smaller disk image.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create an image file with the right size (with &lt;code&gt;seek&lt;/code&gt;, we don&amp;rsquo;t need to actually have the whole space):&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Make sure that the seek=[SIZE] is sufficient
-dd if=/dev/zero of=disk_image.img bs=1 count=1 seek=1TB
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Make the image looks like a disk, by making it as a loopback device.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo losetup /dev/loop0 disk_image.img
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Restore the backup image to the loopback device.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo partimage restore /dev/loop0 backup.partimage.000
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Done, now you can mount &lt;code&gt;/dev/loop0&lt;/code&gt; or delete the loopback device and mount the &lt;code&gt;disk_image.img&lt;/code&gt; directly!&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo losetup -d /dev/loop0 # delete loopback device
-
-mount disk_image.img /mount/point
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This was a trick which I want to share with you.&lt;/p&gt;
-</description>
+      
+      <guid>https://abdelhakbougouffa.pro/posts/restore-partimage-small-disk/</guid>
+      <description>Sometimes; when working with partimage, someone can create a backup of a 1TB partition which contains -for example- only 10GB of data; in this case, when we want to restore it, partimage will fail if the restore disk does not have enough space (1TB in this case).
+ I faced this problem and here the trick I used to restore the backup image to a smaller disk image.</description>
     </item>
     
     <item>
       <title>Contribution à la Localisation et la Cartographie Simultanées (SLAM) dans un Environnement Urbain Inconnu</title>
       <link>https://abdelhakbougouffa.pro/publication/master-thesis-2017/</link>
       <pubDate>Tue, 20 Jun 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://abdelhakbougouffa.pro/publication/master-thesis-2017/</guid>
       <description></description>
     </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
   </channel>
 </rss>

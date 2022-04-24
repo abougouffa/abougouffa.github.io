@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg:svg
+   id="svg2"
+   version="1.1"
+   viewBox="0 0 97.996094 99.48437"
+   height="99.484383pt"
+   width="97.996094pt"
+   sodipodi:docname="ros.svg"
+   inkscape:export-filename="/home/mguenther/Downloads/ros-press-kit/1280px-Ros_logo.svg.png"
+   inkscape:export-xdpi="238.75999"
+   inkscape:export-ydpi="238.75999"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview33"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.84285596"
+     inkscape:cx="-6.5254329"
+     inkscape:cy="32.033943"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g48"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt" />
+  <svg:metadata
+     id="metadata58">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </svg:metadata>
+  <svg:defs
+     id="defs4">
+    <svg:clipPath
+       id="clip1">
+      <svg:path
+         id="path7"
+         d="M 0.0585938,2 H 22 V 25 H 0.0585938 Z m 0,0"
+         inkscape:connector-curvature="0" />
+    </svg:clipPath>
+    <svg:clipPath
+       id="clip2">
+      <svg:path
+         id="path10"
+         d="M 0.0585938,40 H 22 V 64 H 0.0585938 Z m 0,0"
+         inkscape:connector-curvature="0" />
+    </svg:clipPath>
+    <svg:clipPath
+       id="clip3">
+      <svg:path
+         id="path13"
+         d="M 0.0585938,79 H 22 v 23 H 0.0585938 Z m 0,0"
+         inkscape:connector-curvature="0" />
+    </svg:clipPath>
+    <svg:clipPath
+       id="clip4">
+      <svg:path
+         id="path16"
+         d="m 220,0.894531 h 82 V 102.94141 h -82 z m 0,0"
+         inkscape:connector-curvature="0" />
+    </svg:clipPath>
+    <svg:clipPath
+       id="clip5">
+      <svg:path
+         id="path19"
+         d="m 316,0.894531 h 70.05078 V 102.94141 H 316 Z m 0,0"
+         inkscape:connector-curvature="0" />
+    </svg:clipPath>
+  </svg:defs>
+  <svg:g
+     id="surface839"
+     transform="translate(-0.0585938,-2.207031)">
+    <svg:g
+       id="g22"
+       clip-path="url(#clip1)"
+       style="clip-rule:nonzero">
+      <svg:path
+         id="path24"
+         d="m 21.839844,13.492188 c 0,6.230468 -4.890625,11.285156 -10.917969,11.285156 C 4.890625,24.777344 0,19.722656 0,13.492188 0,7.257812 4.890625,2.207031 10.921875,2.207031 c 6.027344,0 10.917969,5.050781 10.917969,11.285157"
+         style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+    </svg:g>
+    <svg:g
+       id="g26"
+       clip-path="url(#clip2)"
+       style="clip-rule:nonzero">
+      <svg:path
+         id="path28"
+         d="m 21.839844,51.949219 c 0,6.230469 -4.890625,11.285156 -10.917969,11.285156 C 4.890625,63.234375 0,58.179688 0,51.949219 0,45.714844 4.890625,40.664062 10.921875,40.664062 c 6.027344,0 10.917969,5.050782 10.917969,11.285157"
+         style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+    </svg:g>
+    <svg:g
+       id="g30"
+       clip-path="url(#clip3)"
+       style="clip-rule:nonzero">
+      <svg:path
+         id="path32"
+         d="m 21.839844,90.40625 c 0,6.230469 -4.890625,11.28516 -10.917969,11.28516 C 4.890625,101.69141 0,96.636719 0,90.40625 0,84.175781 4.890625,79.121094 10.921875,79.121094 c 6.027344,0 10.917969,5.054687 10.917969,11.285156"
+         style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+    </svg:g>
+    <svg:path
+       id="path34"
+       d="m 59.945312,51.949219 c 0,6.230469 -4.886718,11.285156 -10.917968,11.285156 -6.03125,0 -10.921875,-5.054687 -10.921875,-11.285156 0,-6.234375 4.890625,-11.285157 10.921875,-11.285157 6.03125,0 10.917968,5.050782 10.917968,11.285157"
+       style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:connector-curvature="0" />
+    <svg:path
+       id="path36"
+       d="m 59.945312,13.492188 c 0,6.230468 -4.886718,11.285156 -10.917968,11.285156 -6.03125,0 -10.921875,-5.054688 -10.921875,-11.285156 0,-6.234376 4.890625,-11.285157 10.921875,-11.285157 6.03125,0 10.917968,5.050781 10.917968,11.285157"
+       style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:connector-curvature="0" />
+    <svg:path
+       id="path38"
+       d="m 98.054688,51.949219 c 0,6.230469 -4.890626,11.285156 -10.921876,11.285156 -6.03125,0 -10.917968,-5.054687 -10.917968,-11.285156 0,-6.234375 4.886718,-11.285157 10.917968,-11.285157 6.03125,0 10.921876,5.050782 10.921876,11.285157"
+       style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:connector-curvature="0" />
+    <svg:path
+       id="path40"
+       d="m 98.054688,13.492188 c 0,6.230468 -4.890626,11.285156 -10.921876,11.285156 -6.03125,0 -10.917968,-5.054688 -10.917968,-11.285156 0,-6.234376 4.886718,-11.285157 10.917968,-11.285157 6.03125,0 10.921876,5.050781 10.921876,11.285157"
+       style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:connector-curvature="0" />
+    <svg:path
+       id="path42"
+       d="m 98.054688,90.40625 c 0,6.230469 -4.890626,11.28516 -10.921876,11.28516 -6.03125,0 -10.917968,-5.054691 -10.917968,-11.28516 0,-6.230469 4.886718,-11.285156 10.917968,-11.285156 6.03125,0 10.921876,5.054687 10.921876,11.285156"
+       style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:connector-curvature="0" />
+    <svg:path
+       id="path44"
+       d="m 59.945312,90.40625 c 0,6.230469 -4.886718,11.28516 -10.917968,11.28516 -6.03125,0 -10.921875,-5.054691 -10.921875,-11.28516 0,-6.230469 4.890625,-11.285156 10.921875,-11.285156 6.03125,0 10.917968,5.054687 10.917968,11.285156"
+       style="fill:#212e4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:connector-curvature="0" />
+    <svg:g
+       id="g48"
+       clip-path="url(#clip4)"
+       style="clip-rule:nonzero" />
+  </svg:g>
+  <script />
+</svg:svg>

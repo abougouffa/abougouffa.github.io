@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LiDAR on Abdelhak&#39;s Blog</title>
+    <link>https://abdelhakbougouffa.pro/tags/lidar/</link>
+    <description>Recent content in LiDAR on Abdelhak&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://abdelhakbougouffa.pro/tags/lidar/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Particle swarm optimization for solving a scan-matching problem based on the normal distributions transform</title>
+      <link>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NDT-PSO, a New NDT based SLAM Approach using Particle Swarm Optimization</title>
+      <link>https://abdelhakbougouffa.pro/publication/ndtpso-icarcv2020/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdelhakbougouffa.pro/publication/ndtpso-icarcv2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SmartTrolley: An Experimental Mobile Platform for Indoor Localization in Warehouses</title>
+      <link>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</guid>
+      <description>Note This work is part of an industrial project, the source code is not shared. For any details about implementation or results please contact me.</description>
+    </item>
+    
+    <item>
+      <title>Contribution à la Localisation et la Cartographie Simultanées (SLAM) dans un Environnement Urbain Inconnu</title>
+      <link>https://abdelhakbougouffa.pro/publication/master-thesis-2017/</link>
+      <pubDate>Tue, 20 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdelhakbougouffa.pro/publication/master-thesis-2017/</guid>
+      <description></description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Push partition image to an Android phone</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/favicon_hu7c842f6b35a8d0374567474454be744c_4177_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Push partition image to an Android phone" />
+<meta property="og:description" content="Prepare your device   In your Android phone, enter recovery mode and enable ADB (usually, you need a custom recovery like TWRP, OrangeFox or LineageOS&#39; recovery… etc). On a Linux machine, forward a local TCP port to a remote port on the Android device (let say local 6789, remote 9876).  adb forward tcp:6789 tcp:9876 adb shell    Netcat your file  Once connected to the device&#39;s shell, start netcat in listen mode on port 9876, and redirect stdout to the partition block device:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abdelhakbougouffa.pro/posts/push-partition-android/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-23T04:12:44+02:00" />
+<meta property="article:modified_time" content="2022-04-23T00:00:00+00:00" />
+
+
+
+    
+    
+<meta name="description" content="Push partition image to an Android phone" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      
+        <img src="/favicon_hu7c842f6b35a8d0374567474454be744c_4177_42x0_resize_box_3.png" alt="Logo">
+      Abdelhak&#39;s Blog</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/favicon_hu7c842f6b35a8d0374567474454be744c_4177_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/favicon_hu7c842f6b35a8d0374567474454be744c_4177_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://abdelhakbougouffa.pro/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/avatar_hu4ca9978d2de9ec8152cd2ee14d9907f8_291124_120x120_fit_q75_box.jpg' alt="Author Image">
+          <h5 class="author-name">Abdelhak Bougouffa</h5>
+          <p>Sunday, January 23, 2022</p>
+        </div>
+
+        <div class="title">
+          <h1>Push partition image to an Android phone</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Prepare your device
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<ol>
+<li>In your Android phone, enter recovery mode and enable ADB (usually, you need a
+custom recovery like TWRP, OrangeFox or LineageOS&#39; recovery… etc).</li>
+<li>On a Linux machine, forward a local TCP port to a remote port on the Android
+device (let say local 6789, remote 9876).</li>
+</ol>
+<div class="src src-shell">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>adb forward tcp:6789 tcp:9876
+</span></span><span style="display:flex;"><span>adb shell</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Netcat your file
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>Once connected to the device&#39;s shell, start <code class="verbatim">netcat</code> in listen mode on port
+   9876, and redirect <code class="verbatim">stdout</code> to the partition block device:</p>
+<div class="src src-shell">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>nc -l -p <span style="color:#ae81ff">9876</span> &gt; /dev/block/sda16</span></span></code></pre></div>
+</div>
+<p>
+Now on the Linux shell, <code class="verbatim">dd</code> the partition backup file and redirect the output
+   to <code class="verbatim">netcat</code>:</p>
+<div class="src src-shell">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/path/to/backup.img | nc localhost <span style="color:#ae81ff">6789</span> &amp;</span></span></code></pre></div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+See progress information
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>Using <code class="verbatim">dd</code>, you can check for the progress using the user defined signal <code class="verbatim">USR1</code>,
+   you can see the progress information by sending a <code class="verbatim">USR1</code> signal to the <code class="verbatim">dd</code>
+   process (knowing it&#39;s <code class="verbatim">PID</code>):</p>
+<div class="src src-shell">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>kill -USR1 <span style="color:#f92672">[</span>PID<span style="color:#f92672">]</span></span></span></code></pre></div>
+</div>
+<p>
+That&#39;s it!</p>
+</div>
+</div>
+</div>
+</div>
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">Prepare your device</a>
+</li>
+<li><a href="#headline-2">Netcat your file</a>
+<ul>
+<li><a href="#headline-3">See progress information</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+      
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://abdelhakbougouffa.pro#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://abdelhakbougouffa.pro#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://abdelhakbougouffa.pro#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://abdelhakbougouffa.pro#publications">Publications</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://abdelhakbougouffa.pro#education">Education</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:firstname%20%28dot%29%20lastname@universite-paris-saclay.fr target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>firstname (dot) lastname@universite-paris-saclay.fr</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+    <link rel="stylesheet" href="/katex/katex.min.css">
+<script type="text/javascript" defer src="/katex/katex.min.js"></script>
+<script type="text/javascript" defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);">
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        }
+    );
+</script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
