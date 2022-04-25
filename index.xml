@@ -25,33 +25,6 @@
     </item>
     
     <item>
-      <title>Particle swarm optimization for solving a scan-matching problem based on the normal distributions transform</title>
-      <link>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://abdelhakbougouffa.pro/publication/pso-scanmatching2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NDT-PSO, a New NDT based SLAM Approach using Particle Swarm Optimization</title>
-      <link>https://abdelhakbougouffa.pro/publication/ndtpso-icarcv2020/</link>
-      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://abdelhakbougouffa.pro/publication/ndtpso-icarcv2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SmartTrolley: An Experimental Mobile Platform for Indoor Localization in Warehouses</title>
-      <link>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</link>
-      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://abdelhakbougouffa.pro/publication/smarttrolley-rcae2020/</guid>
-      <description>Note This work is part of an industrial project, the source code is not shared. For any details about implementation or results please contact me.</description>
-    </item>
-    
-    <item>
       <title>Restore a partimage to a smaller disk</title>
       <link>https://abdelhakbougouffa.pro/posts/restore-partimage-small-disk/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
@@ -59,15 +32,6 @@
       <guid>https://abdelhakbougouffa.pro/posts/restore-partimage-small-disk/</guid>
       <description>Sometimes; when working with partimage, someone can create a backup of a 1TB partition which contains -for example- only 10GB of data; in this case, when we want to restore it, partimage will fail if the restore disk does not have enough space (1TB in this case).
  I faced this problem and here the trick I used to restore the backup image to a smaller disk image.</description>
-    </item>
-    
-    <item>
-      <title>Contribution à la Localisation et la Cartographie Simultanées (SLAM) dans un Environnement Urbain Inconnu</title>
-      <link>https://abdelhakbougouffa.pro/publication/master-thesis-2017/</link>
-      <pubDate>Tue, 20 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://abdelhakbougouffa.pro/publication/master-thesis-2017/</guid>
-      <description></description>
     </item>
     
     
