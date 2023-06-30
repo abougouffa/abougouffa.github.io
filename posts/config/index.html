@@ -3658,7 +3658,7 @@ the window title</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;bac
 </span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;\\|^:PROPERTIES:\n\\(.+\n\\)+:END:\n&#34;</span> <span style=color:#75715e>;; org-roam ID</span>
 </span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;\\|\\[\\[\\(.*\\]\\)&#34;</span> <span style=color:#75715e>;; any link</span>
 </span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;\\)&#34;</span>)))
-</span></span></code></pre></div><h2 id=programming>Programming</h2><h3 id=csv-rainbow>CSV rainbow</h3><p>Stolen from <a href="https://www.reddit.com/r/emacs/comments/26c71k/comment/chq2r8m/?utm_source=reddit&utm_medium=web2x&context=3">here</a>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-emacs-lisp data-lang=emacs-lisp><span style=display:flex><span>(after! csv-mode
+</span></span></code></pre></div><h2 id=programming>Programming</h2><h3 id=csv-rainbow>CSV rainbow</h3><p>Stolen from <a href="https://www.reddit.com/r/emacs/comments/26c71k/comment/chq2r8m/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3">here</a>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-emacs-lisp data-lang=emacs-lisp><span style=display:flex><span>(after! csv-mode
 </span></span><span style=display:flex><span>  <span style=color:#75715e>;; TODO: Need to fix the case of two commas, example &#34;a,b,,c,d&#34;</span>
 </span></span><span style=display:flex><span>  (require <span style=color:#e6db74>&#39;cl-lib</span>)
 </span></span><span style=display:flex><span>  (require <span style=color:#e6db74>&#39;color</span>)
@@ -6168,7 +6168,7 @@ end
 </span></span><span style=display:flex><span>    check_and_install_pkg <span style=color:#e6db74>&#34;</span>$PKG<span style=color:#e6db74>&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
 </span></span></code></pre></div><h3 id=kde-plasma>KDE Plasma</h3><p>On KDE, there is a good support for HiDPI displays, however, I faced annoying
-small icons in some contexts (for example, a right click on desktop). <a href="https://www.reddit.com/r/kde/comments/o8bb4s/comment/h33z7bp/?utm_source=share&utm_medium=web2x&context=3">This can
+small icons in some contexts (for example, a right click on desktop). <a href="https://www.reddit.com/r/kde/comments/o8bb4s/comment/h33z7bp/?utm_source=share&amp;utm_medium=web2x&amp;context=3">This can
 be fixed</a> by setting <code>PLASMA_USE_QT_SCALING=1</code> before starting KDE Plasma. KDE
 sources the files with <code>.sh</code> extension found on <code>~/.config/plasma-workspace/env</code>, so
 let&rsquo;s create ours.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>export PLASMA_USE_QT_SCALING<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
